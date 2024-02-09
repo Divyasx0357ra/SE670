@@ -2,12 +2,12 @@ public class MathUtilsTest {
 
     public static double sqrt(double x) {
         if (x < 0) {
-            // Faulty implementation does not handle negative input
-            return -1; // Incorrect behavior for negative input
+            return Double.NaN;
         } else {
             return Math.sqrt(x);
         }
     }
+    
 
     public static void main(String[] args) {
         testSqrt();
