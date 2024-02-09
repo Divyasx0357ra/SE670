@@ -1,4 +1,4 @@
-public class MathUtils {
+public class MathUtilsTest {
 
     public static double sqrt(double x) {
         if (x < 0) {
