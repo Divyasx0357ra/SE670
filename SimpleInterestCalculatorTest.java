@@ -11,7 +11,7 @@ public class SimpleInterestCalculatorTest {
         if (expectedInterest1 == actualInterest1) {
             System.out.println("Test case 1 passed");
         } else {
-            System.out.println("Test case 1 failed");
+            System.out.println("Test cases 1 failed");
         }
         
         // Test case 2
