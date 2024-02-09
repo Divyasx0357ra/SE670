@@ -7,7 +7,7 @@ public class SimpleInterestCalculatorTest {
         double rate1 = 5;
         double time1 = 2;
         double expectedInterest1 = 100;
-        double actualInterest1 = calculator.calculateSimpleInterest(principal, rate1, time1);
+        double actualInterest1 = calculator.calculateSimpleInterest(principal1, rate1, time1);
         if (expectedInterest1 == actualInterest1) {
             System.out.println("Test case 1 passed");
         } else {
