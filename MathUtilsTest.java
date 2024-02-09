@@ -1,13 +1,12 @@
-public class MathUtilsTest {
+public class MathUtils {
 
     public static double sqrt(double x) {
         if (x < 0) {
-            return Double.NaN;
+            return Double.NaN; // Return NaN for negative input
         } else {
             return Math.sqrt(x);
         }
     }
-    
 
     public static void main(String[] args) {
         testSqrt();
@@ -28,7 +27,9 @@ public class MathUtilsTest {
     }
 
     public static void assertEqual(double expected, double actual, String testCase) {
-        if (expected == actual) {
+        if (Double.isNaN(expected) && Double.isNaN(actual)) {
+            System.out.println(testCase + " passed");
+        } else if (expected == actual) {
             System.out.println(testCase + " passed");
         } else {
             System.out.println(testCase + " failed: Expected " + expected + ", but got " + actual);
